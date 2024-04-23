@@ -1,9 +1,35 @@
 # Ex.No: 10 Learning – Use Supervised Learning  
-### DATE:                                                                            
-### REGISTER NUMBER : 
+
+### DATE: 23/04/2024                                                                      
+### REGISTER NUMBER : 212221040165
 ### AIM: 
-To write a program to train the classifier for -----------------.
+
+To write a program to train the classifier for Diabetes Prediction.
 ###  Algorithm:
+
+1.Start the program.
+
+2.Import required Python libraries, including NumPy, Pandas, Google Colab, Gradio, and various scikit-learn modules.
+
+3.Mount Google Drive using Google Colab's 'drive.mount()' method to access the data file located in Google Drive.
+
+4.Install the Gradio library using 'pip install gradio'.
+
+5.Load the diabetes dataset from a CSV file ('diabetes.csv') using Pandas.
+
+6.Separate the target variable ('Outcome') from the input features and Scale the input features using the StandardScaler from scikit-learn.
+
+7.Create a multi-layer perceptron (MLP) classifier model using scikit-learn's 'MLPClassifier'.
+
+8.Train the model using the training data (x_train and y_train).
+
+9.Define a function named 'diabetes' that takes input parameters for various features and Use the trained machine learning model to predict the outcome based on the input features.
+
+10.Create a Gradio interface using 'gr.Interface' and Specify the function to be used to make predictions based on user inputs.
+
+11.Launch the Gradio web application, enabling sharing, to allow users to input their data and get predictions regarding diabetes risk.
+
+12.Stop the program.
 
 ### Program:
 
@@ -75,6 +101,10 @@ app = gr.Interface(fn=diabetes, inputs=['number','number','number','number','num
 app.launch(share=True)
 ```
 ### Output:
+
+![image](https://github.com/Sudhar2303/AI_Lab_2023-24/assets/133684710/31e0240c-1daa-42ef-83a0-43baa6d16fc8)
+
+![image](https://github.com/Sudhar2303/AI_Lab_2023-24/assets/133684710/b49120ff-6f11-46cb-adad-3072deb11cab)
 
 
 ### Result:
